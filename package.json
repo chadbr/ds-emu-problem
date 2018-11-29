@@ -1,0 +1,39 @@
+{
+  "name": "ds-emu-problem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --inspect dist/index.js",
+    "build": "trash dist && tsc -p tsconfig.json",
+    "lint": "tslint --project tsconfig.json src/**/*.ts"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadbr/ds-emu-problem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadbr/ds-emu-problem/issues"
+  },
+  "homepage": "https://github.com/chadbr/ds-emu-problem#readme",
+  "devDependencies": {
+    "@types/debug": "^0.0.31",
+    "nodemon": "1.18.4",
+    "trash-cli": "^1.4.0",
+    "tslint": "^5.11.0",
+    "typescript": "3.2.1"
+  },
+  "dependencies": {
+    "@google-cloud/datastore": "^2.0.0",
+    "debug": "^4.1.0",
+    "ts-node": "^7.0.1",
+    "tslib": "^1.9.3",
+    "xmldom": "^0.1.27"
+  }
+}
